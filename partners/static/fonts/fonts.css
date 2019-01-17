@@ -1,0 +1,30 @@
+@font-face { 
+    font-family: "MuseoSansRegular";
+    src: url(MuseoSansRegular/MuseoSansRegular.eot) format("eot"), 
+         url(MuseoSansRegular/MuseoSansRegular.woff) format("woff"), 
+         url(MuseoSansRegular/MuseoSansRegular.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "MuseoSansBold";
+    src: url(MuseoSansBold/MuseoSansBold.eot) format("eot"), 
+         url(MuseoSansBold/MuseoSansBold.woff) format("woff"), 
+         url(MuseoSansBold/MuseoSansBold.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "MuseoSansMedium";
+    src: url(MuseoSansMedium/MuseoSansMedium.eot) format("eot"), 
+         url(MuseoSansMedium/MuseoSansMedium.woff) format("woff"), 
+         url(MuseoSansMedium/MuseoSansMedium.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "MuseoSansBlack";
+    src: url(MuseoSansBlack/MuseoSansCyrl-900.eot) format("eot"), 
+         url(MuseoSansBlack/MuseoSansCyrl-900.woff) format("woff"), 
+         url(MuseoSansBlack/MuseoSansCyrl-900.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "MuseoSansLight";
+    src: url(MuseoSansLight/MuseoSansLight.eot) format("eot"), 
+         url(MuseoSansLight/MuseoSansLight.woff) format("woff"), 
+         url(MuseoSansLight/MuseoSansLight.ttf) format("truetype"); 
+}
