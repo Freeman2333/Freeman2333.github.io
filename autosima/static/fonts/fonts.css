@@ -1,0 +1,36 @@
+/* @font-face { 
+    font-family: "MuseoSansRegular";
+    src: url(MuseoSansRegular/MuseoSansRegular.eot) format("eot"), 
+         url(MuseoSansRegular/MuseoSansRegular.woff) format("woff"), 
+         url(MuseoSansRegular/MuseoSansRegular.ttf) format("truetype"); 
+} */
+@font-face { 
+    font-family: "RobotoBold";
+    src: url(RobotoBold/RobotoBold.eot) format("eot"), 
+         url(RobotoBold/RobotoBold.woff) format("woff"), 
+         url(RobotoBold/RobotoBold.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "RobotoLight";
+    src: url(RobotoLight/RobotoLight.eot) format("eot"), 
+         url(RobotoLight/RobotoLight.woff) format("woff"), 
+         url(RobotoLight/RobotoLight.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "RobotoMedium";
+    src: url(RobotoMedium/RobotoMedium.eot) format("eot"), 
+         url(RobotoMedium/RobotoMedium.woff) format("woff"), 
+         url(RobotoMedium/RobotoMedium.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "RobotoRegular";
+    src: url(RobotoRegular/RobotoRegular.eot) format("eot"), 
+         url(RobotoRegular/RobotoRegular.woff) format("woff"), 
+         url(RobotoRegular/RobotoRegular.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "GothamProBold";
+    src: url(GothamProBold/GothamProBold.eot) format("eot"), 
+         url(GothamProBold/GothamProBold.woff) format("woff"), 
+         url(GothamProBold/GothamProBold.ttf) format("truetype"); 
+}
