@@ -1,0 +1,28 @@
+@font-face { 
+    font-family: "PTSansRegular";
+    src: url(PTSansRegular/PTSansRegular.eot) format("eot"), 
+         url(PTSansRegular/PTSansRegular.woff) format("woff"), 
+         url(PTSansRegular/PTSansRegular.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "PTSansBold";
+    src: url(PTSansBold/PTSansBold.eot) format("eot"), 
+         url(PTSansBold/PTSansBold.woff) format("woff"), 
+         url(PTSansBold/PTSansBold.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "PTSansItalic";
+    src: url(PTSansItalic/PTSansItalic.eot) format("eot"), 
+         url(PTSansItalic/PTSansItalic.woff) format("woff"), 
+         url(PTSansItalic/PTSansItalic.ttf) format("truetype"); 
+}
+@font-face {
+	font-family: 'Kurale';
+	src: url('kurale/Kurale-Regular.eot');
+	src: local('Kurale'), local('Kurale-Regular'),
+		url('kurale/Kurale-Regular.eot?#iefix') format('embedded-opentype'),
+		url('kurale/Kurale-Regular.woff') format('woff'),
+		url('kurale/Kurale-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
