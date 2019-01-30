@@ -1,0 +1,38 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+	font-family: "AdobeCaslon";
+	src: url("../fonts/AdobeCaslon/ACaslonPro-Regular.eot");
+	src: url("../fonts/AdobeCaslon/ACaslonPro-Regular.eot?#iefix")format("embedded-opentype"),
+	url("../RealEstateWebsite/fonts/AdobeCaslon/ACaslonPro-Regular.woff") format("woff"),
+	url("../RealEstateWebsite/fonts/AdobeCaslon/ACaslonPro-Regular.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "ArialRegular";
+	src: url("../RealEstateWebsite/fonts/ArialRegular/ArialRegular.eot");
+	src: url("../RealEstateWebsite/fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+	url("../RealEstateWebsite/fonts/ArialRegular/ArialRegular.woff") format("woff"),
+	url("../RealEstateWebsite/fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+font-family: 'Arial Rounded MT Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Arial Rounded MT Bold'), url('../RealEstateWebsite/fonts/ArialRound/ARLRDBD_0.woff') format('woff');
+}
+@font-face {
+font-family: 'Lucida Sans Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Lucida Sans Regular'), url('../RealEstateWebsite/fonts/Lucida/LSANS.woff') format('woff');
+}
+@font-face {
+font-family: 'Microsoft Sans Serif';
+font-style: normal;
+font-weight: normal;
+src: local('Microsoft Sans Serif'), url('fonts/MSSansSerif/micross.woff') format('woff');
+}
+
