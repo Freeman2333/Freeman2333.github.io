@@ -1,0 +1,19 @@
+@font-face { 
+    font-family: "rubik";
+    src: url(rubik/Rubik-Regular.ttf) format("truetype"),
+		url(rubik/Rubik-Regular.eot) format("eot"), 
+         url(rubik/Rubik-Regular.woff) format("woff"); 
+          
+}
+@font-face { 
+    font-family: "rubik-medium";
+    src:  
+         url(rubik-medium/Rubik-Medium.ttf) format("truetype"); 
+}
+@font-face { 
+    font-family: "rubik-light";
+    src:   url(rubik-light/Rubik-Light.ttf) format("truetype"), 
+    		url(rubik-light/Rubik-Light.eot) format("eot"), 
+         url(rubik-light/Rubik-Light.woff) format("woff");   
+         
+}
