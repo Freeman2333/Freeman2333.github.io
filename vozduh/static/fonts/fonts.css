@@ -1,0 +1,62 @@
+
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('BebasNeueBold/BebasNeueBold.eot');
+    src: url('BebasNeueBold/BebasNeueBold.eot') format('embedded-opentype'),
+         url('BebasNeueBold/BebasNeueBold.woff') format('woff'),
+         url('BebasNeueBold/BebasNeueBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('Bebasregular/BebasNeueRegular.eot');
+    src: url('Bebasregular/BebasNeueRegular.eot') format('embedded-opentype'),
+         url('Bebasregular/BebasNeueRegular.woff') format('woff'),
+         url('Bebasregular/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("robotoRegular/Roboto-Regular.eot");
+    src: url("robotoRegular/Roboto-Regular.eot?#iefix")format("embedded-opentype"),
+    url("robotoRegular/Roboto-Regular.woff") format("woff"),
+    url("RobotoRegular/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("RobotoLight/Roboto-Light.eot");
+    src: url("RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("RobotoLight/Roboto-Light.woff") format("woff"),
+    url("RobotoLight/Roboto-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("RobotoMedium/Roboto-Medium.eot");
+    src: url("RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("RobotoMedium/Roboto-Medium.woff") format("woff"),
+    url("RobotoMedium/Roboto-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("RobotoBold/Roboto-Bold.eot");
+    src: url("RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("RobotoBold/Roboto-Bold.woff") format("woff"),
+    url("RobotoBold/Roboto-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
