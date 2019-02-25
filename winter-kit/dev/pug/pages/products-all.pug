@@ -1,0 +1,95 @@
+extends ../layout/main
+
+block title
+	| All products
+
+block content
+	section.all-products
+		.container
+			aside.all-products__filter
+				.filter-item
+					span.filter-title Categories
+					.filter-line
+						
+						input(type="radio" id="filter-men" name="filter-cat")
+						label(for="filter-men") Men
+					.filter-line
+						
+						input(type="radio" id="filter-women" name="filter-cat")
+						label(for="filter-women") Women
+					.filter-line
+						
+						input(type="radio" id="filter-children" name="filter-cat")
+						label(for="filter-children") Children
+					.filter-line
+						
+						input(type="radio" id="filter-deals" name="filter-cat")
+						label(for="filter-deals") Hot Deals
+				.filter-item
+					span.filter-title Price Filter
+					.filter-line
+						#slider_price
+					.filter-line.filter-line--price
+						.filter__price-from
+							label(for="price") From
+							input(type="text" name="price" id="price" maxlength="10")
+						.filter__price-to
+							label(for="price2") To
+							input(type="text" name="price2" id="price2" maxlength="10")
+				.filter-item
+					span.filter-title Sizes
+					.filter-line
+						label(for="small").checkbox Small
+							input(type="checkbox" id="small")
+							span.custom-checkbox
+					.filter-line
+						label(for="Medium").checkbox Medium
+							input(type="checkbox" id="Medium")
+							span.custom-checkbox
+					.filter-line
+						label(for="Large").checkbox Large
+							input(type="checkbox" id="Large")
+							span.custom-checkbox
+					.filter-line
+						label(for="X-Large").checkbox X-Large
+							input(type="checkbox" id="X-Large")
+							span.custom-checkbox
+				.filter-item
+					span.filter-title Brands
+					.filter-line
+						
+						label(for="Reebok").checkbox Reebok
+							input(type="checkbox" id="Reebok")
+							span.custom-checkbox
+					.filter-line
+						
+						label(for="Adidas").checkbox Adidas
+							input(type="checkbox" id="Adidas")
+							span.custom-checkbox
+					.filter-line
+
+						
+						label(for="Nike").checkbox Nike
+							input(type="checkbox" id="Nike")
+							span.custom-checkbox
+						.filter-line
+						
+						label(for="X-Active").checkbox X-Active
+							input(type="checkbox" id="X-Active")
+							span.custom-checkbox
+
+			main.all-products__show
+				include ../modules/products/product1
+				include ../modules/products/product2
+				include ../modules/products/product3			
+				include ../modules/products/product4
+				include ../modules/products/product1
+				include ../modules/products/product2
+				include ../modules/products/product3			
+				include ../modules/products/product4	
+				include ../modules/products/product1
+				include ../modules/products/product2
+				include ../modules/products/product3			
+				include ../modules/products/product4			
+				a.product-item__more
+	include ../modules/subscribe

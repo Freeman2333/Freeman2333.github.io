@@ -1,0 +1,36 @@
+.product-item
+	.product-item__first
+		img(src="static/img/content/products/product1.png", alt="reebok").product-item--pic
+		span.product-item__title Reebok Track Jacket
+		span.product-item__price 100$
+	.product-item__second
+		ul.product-item__slider
+			li 
+				img(src="static/img/content/products/product1.png", alt="altern-product")
+			li 
+				img(src="static/img/content/products/product1.png", alt="altern-product")
+			li 
+				img(src="static/img/content/products/product1.png", alt="altern-product")
+			li 
+				img(src="static/img/content/products/product1.png", alt="altern-product")
+		span.product-item__title Reebok Track Jacket
+		.product-item__sizes 
+			span sizes : 
+			ul.sizes-list
+				li 
+					span s 
+				li 
+					span.active m 
+				li 
+					span l 
+				li 
+					span xl
+		.product-item__colors
+			a(href="#" data-slide-index="0").product-color__pink
+			a(href="#" data-slide-index="1").product-color__bluish
+			a(href="#" data-slide-index="2").product-color__blue
+			a(href="#" data-slide-index="3").product-color__green
+		.product-item__buttons
+			a(href="#").product-item__web
+			a(href="#").product-item__buy
+			a(href="#").product-item__favourite

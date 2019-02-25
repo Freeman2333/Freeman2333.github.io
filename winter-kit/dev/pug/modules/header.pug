@@ -1,0 +1,46 @@
+
+header
+	.header__top
+		.container
+			.header__contacts
+				a(href="mailto:info@shopy.com").header__mail info@shopy.com
+				a(href="tel:55555555").header__phone 5555-55-55
+			ul.header__social
+				li 
+					a(href="#").header-social__link.header-social__link--fb
+				li 
+					a(href="#").header-social__link.header-social__link--tw
+				li 
+					a(href="#").header-social__link.header-social__link--google
+				li 
+					a(href="#").header-social__link.header-social__link--instagram
+	.header__bottom
+		.container
+			.header__logo
+				img(src="static/img/general/logo.png", alt="logo")
+			nav.header-nav
+				ul.header-nav__list
+					li.active 
+						a(href="index.html") Home
+					li 
+						a(href="product.html") Products
+					li 
+						a(href="products-all.html") Hot Deals
+					li 
+						a(href="#") About
+					li 
+						a(href="#") Contact
+			button(type="button").hamburger.hamburger--slider
+				span.hamburger-box
+					span.hamburger-inner
+			.header-action
+				.header-search
+					span.header-search__icon
+					form.header-search__form
+						input(type="text")
+				.header-user
+					span.header-user__icon
+				.header-basket
+					span.header-basket__icon
+					span.header-basket__number 5
+

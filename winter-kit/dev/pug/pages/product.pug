@@ -1,0 +1,81 @@
+extends ../layout/main
+
+block title
+	| Product
+
+block content
+	section.product-view
+		.container
+			.product-gallery
+				ul.js-product-view-slider
+					li
+						img(src="static/img/content/product-gallery/Big-Product.png", alt="jacket")
+					li
+						img(src="static/img/content/product-gallery/Big-Product.png", alt="jacket")
+					li
+						img(src="static/img/content/product-gallery/Big-Product.png", alt="jacket")
+				.js-product-view__pager
+					a(href="#" data-slide-index="0")
+						img(src="static/img/content/product-gallery/pager0.png", alt="")
+					a(href="#" data-slide-index="1")
+						img(src="static/img/content/product-gallery/pager1.png", alt="")
+					a(href="#" data-slide-index="2")
+						img(src="static/img/content/product-gallery/pager2.png", alt="")
+			.product-info
+				span.product-info__title FULL WINTER KIT
+				span.product-info__goods Half Jacket + Skiny Trousers + Boot leather
+				p.product-info__descr Lorem Ipsum is simply dummy text of the printing and typesetting industry  Lorem Ipsum is simply dummy text of the printing and typesetting industry
+				.product-settings
+					.product__chose-size
+						span Choose Size
+						ul.chose-size__list
+							li  S
+							li  M
+							li.active  L
+							li  XL
+					.product__choose-quantity
+						span Choose Quantity
+						.chose-quantity
+							span.quantity-down -
+							span.quantity-count 0
+							span.quantity-up +
+				.product-offer
+					.product-price__wrapper
+						span Price:
+						span.product-price 100$
+					.product-actions
+						ul.product-item__buttons
+							li
+								a(href="#").product-item__web
+							li
+								a(href="#").product-item__buy
+							li
+								a(href="#").product-item__favourite
+						a(href="#").g-btn Order Now
+						
+
+
+
+
+
+
+
+
+	section.related-products
+		.container
+			.section-title
+				.section-title__big
+					span.section-title__orange related 
+					span products
+				span.section-title__descr Lorem Ipsum is simply dummy text of the printing and typesetting industry
+			.product-item__line
+				include ../modules/products/product1
+				include ../modules/products/product2
+				include ../modules/products/product3			
+				include ../modules/products/product4
+				include ../modules/products/product1
+				include ../modules/products/product2
+				include ../modules/products/product3			
+				include ../modules/products/product4			
+
+	include ../modules/subscribe

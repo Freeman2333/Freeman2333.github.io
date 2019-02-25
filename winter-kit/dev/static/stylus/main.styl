@@ -1,0 +1,1015 @@
+// Подключаем стили библиотек
+@import '_libs.styl'
+
+// Подключаем переменные
+@import '_vars.styl'
+
+// Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
+@import '_sprite.styl'
+
+// Подключаем миксины
+@import '_mixins.styl'
+
+html 
+	line-height 1
+	font-size 14px
+
+body
+	font-family mainFont
+	color mainFontColor
+	background mainBgColor
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+ul,li
+	margin 0
+	padding 0
+	list-style-type none
+	
+p
+	margin 0
+	
+a
+	text-decoration none
+	color mainFontColor
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+	
+textarea
+	resize none
+
+section
+	position relative
+	margin-bottom 120px
+
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+	
+.hide
+	display none
+	
+.show
+	display block
+	
+::-moz-selection 
+	background: #b3d4fc;
+	text-shadow: none;
+	
+::selection 
+	background: #b3d4fc;
+	text-shadow: none;
+	
+.clearfix:before,
+.clearfix:after 
+	content: " ";
+	display: table;
+
+.clearfix:after 
+	clear: both;
+
+.clearfix 
+	*zoom: 1;
+.container
+	width 97%
+	max-width 1170px
+	margin 0 auto
+
+.section-title
+	text-align center
+	margin-bottom 70px
+	.section-title__orange
+		color orangeColor
+
+.section-title__big
+	font-size 2.571rem
+	margin-bottom 25px
+	font-family extraBoldFont
+	text-transform uppercase
+	
+.section-title__descr
+	display block  
+	color lightBlueColor
+	font-size 1.1428rem
+
+.g-btn 
+	border 1px solid transparent
+	background orangeColor
+	color white
+	display inline-block
+	line-height 50px
+	padding 0 34px
+	cursor pointer
+	&:hover
+		background white
+		border 1px solid orangeColor
+		color orangeColor
+
+
+
+/*header*/
+
+header
+	background #fff
+	
+.header__top
+	padding 25px 0
+	border 1px solid lightGrayColor
+	font-size 0.857rem
+	.container
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+
+.header__mail
+	margin-right 20px
+	&:before
+		content ''
+		margin-right 10px
+		display inline-block
+		sprite($s-header_mail)
+
+.header__phone
+	&:before
+		content ''
+		margin-right 10px
+		display inline-block
+		sprite($s-header_phone)
+
+.header__social
+	li 
+		display inline-block
+		margin-right 15px
+		&:last-child
+			margin-right 0
+
+.header-social__link--fb
+	display block
+	sprite($s-fb)
+.header-social__link--tw
+	display block
+	sprite($s-tw)
+.header-social__link--google
+	display block
+	sprite($s-google)
+.header-social__link--instagram
+	display block
+	sprite($s-inst)
+
+.header__bottom
+	padding 40px 0
+	border-bottom 1px solid lightGrayColor
+	.container
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		align-items center
+		
+.header-nav
+	margin-right auto
+	.header-nav__list
+		li 
+			display inline-block
+			margin-right 40px
+			&:last-child
+				margin-right 0
+			&.active,
+			&:hover
+				a 
+					color orangeColor
+		a 
+			display block
+			width 100%
+			height 100%
+			font-size 1.143rem
+
+.header__logo 
+	margin-right 80px
+
+.header-search__form
+	display none
+
+.header-action
+	width 100%
+	max-width 120px
+	text-align right
+	
+
+.header-search
+.header-user
+.header-basket
+	display inline-block
+	margin-right 25px
+
+.header-basket
+	margin-right 0
+	position relative
+
+.header-basket__number
+	position absolute
+	display block
+	background mainFontColor
+	color #fff
+	width 19px
+	height 19px
+	border-radius 50%
+	font-size .714rem
+	text-align center
+	line-height 19px
+	top -21px
+	left 2px
+
+.header-search__icon
+	display block
+	cursor pointer
+	sprite($s-header-search)
+
+.header-user__icon
+	display block
+	cursor pointer
+	sprite($s-header-user)
+	
+.header-basket__icon
+	display block
+	cursor pointer
+	sprite($s-header-basket)
+
+.hamburger
+	display none
+
+/*slider section*/
+
+.index-slider
+.product-item__second
+.product-gallery
+	padding 0
+	.bx-wrapper
+		margin-bottom 0
+		.bx-viewport
+			box-shadow none
+			border none
+			left 0
+			background none
+
+.js-index__slider
+	img
+		height auto
+		min-height 400px
+		width 100%    
+
+.js-index__slider--pager
+	position absolute
+	z-index 10
+	top 50%
+	transform translateY(-50%)
+	a 
+		display block
+		background #fff
+		margin-bottom 10px
+		width 10px
+		height 15px
+		&:last-child
+			margin-bottom 0
+		&.active
+			height 40px
+			background orangeColor 
+
+.index-slider__info
+	height 650px
+	background url('../img/content/slider/slide1.jpg')
+	background-repeat no-repeat
+	background-size cover
+	background-position center
+	display flex
+	align-items center
+	padding-left 12%
+
+.index-slider__title,
+.product-info__title
+	display block
+	font-family OpenSansExtraBold
+	font-size 3.714rem
+	color orangeColor
+	margin-bottom 20px
+
+.index-slider__goods
+	display block
+	font-family boldFont
+	color lightBlueColor
+	font-size 1.285rem
+	margin-bottom 12px
+
+.index-slider__descr
+	display block
+	margin-bottom 55px
+	font-size 1.142rem
+
+.index-slider__price
+	margin-right 30px
+	font-family boldFont
+	
+.index-slider__buy
+	color orangeColor
+	font-family boldFont
+	cursor pointer
+	&:before 
+		content ''
+		display inline-block
+		sprite($s-header-basket)
+		margin-right 5px
+		margin-bottom -2px
+
+.product-item
+	background #fff
+	width 100%
+	max-width 270px
+	height 360px
+	padding 30px 20px
+	cursor pointer
+	overflow hidden
+	margin-bottom 50px
+	&:hover
+		box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+		.product-item__first
+			display none
+		.product-item__second
+			opacity 1
+			transition 1s
+	&:nth-child(n+5)
+		display none
+				
+.product-item__second
+	opacity 0
+
+	img
+		display block
+		height 90px
+		width auto
+
+.product-item__line
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+
+.new-arrivals,
+.related-products
+	.product-item
+		margin-right 30px
+		&:nth-of-type(4n+4)
+			margin-right 0
+
+.product-item--pic
+	display block
+	margin 0 auto 15px
+	
+.product-item__title
+	display block
+	text-align center
+	margin-bottom 20px
+	font-family boldFont
+	font-size 1.143rem
+
+.product-item__price
+	text-align center
+	display block
+	font-family boldFont
+	font-size 1.143rem
+	color  orangeColor
+
+.product-item__second
+	.product-item__title 
+		display block
+		color orangeColor
+		
+.product-item__slider
+	img 
+		margin 0 auto 25px
+
+.product-item__sizes
+	text-align center
+	margin-bottom 25px
+	>span 
+		margin-right 10px
+	
+.sizes-list
+	display inline-block
+	li 
+		display inline-block
+		font-family boldFont
+		span
+			&:hover
+				color orangeColor
+		&.active
+			span
+				color orangeColor
+				font-size 1.21rem
+	li+li:before 
+		content '-'
+		margin-left 5px
+		display inline-block
+
+.product-item__colors
+	text-align center
+	margin-bottom 25px
+	a 
+		display inline-block
+		width 14px
+		height 14px
+		border-radius 50%
+		margin-right 5px
+		&.product-color__pink
+			background #E94650
+		&.product-color__bluish
+			background #43525D
+		&.product-color__blue
+			background #44C1FF
+		&.product-color__green
+			background #30DC7A
+
+.product-item__buttons
+	padding-top 30px
+	border-top 1px solid lightGrayColor
+	width 70%
+	margin 0 auto
+	text-align center
+	li
+		display inline-block
+		margin-right 10px
+		margin-left 10px
+	a 
+		display block
+		&.product-item__web
+			sprite($s-product-web)
+		&.product-item__buy
+			sprite($s-product-basket)
+		&.product-item__favourite
+			sprite($s-product-fav)
+			
+.product-item__more
+	position relative
+	display block
+	width 100%
+	background #fff
+	text-align center
+	color orangeColor
+	height 60px
+	padding 20px 0
+	font-size 5rem
+	cursor pointer
+	&:after
+		content '...'
+		position absolute
+		top 10%
+		left 50%	
+		transform translate(-50%,-50%)
+	&.show-less
+		&:after
+			content 'Скрыть товары'
+			font-size 1.4rem
+			margin-top 18px
+
+/* banner section */
+
+.banners
+	.container
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		
+.banner-large
+	width 100%
+	max-width 670px
+	border 1px solid #EEF1F2
+	background #fff
+	padding 10px 0 10px 60px
+
+.banner-large__img
+	margin-right 60px
+
+.banner-large__text
+	position relative
+	display inline-block
+	vertical-align middle
+	margin-right 60px	
+	&:after
+		content ""
+		position absolute
+		right -35px
+		top 50%
+		transform translateY(-50%)
+		display inline-block
+		height 45px
+		width 1px
+		background #F7F7F8
+		
+.banner-large__decr
+	font-size .857rem
+
+.banner-large__price
+	display inline-block
+	vertical-align middle
+	color orangeColor
+	font-size 2.2857rem
+	font-family extraBoldFont
+	&:before
+		content ''
+		display inline-block
+		sprite($s-product-basket)
+		margin-right 20px		
+		
+.banner-large__title
+	text-transform uppercase
+	font-family extraBoldFont
+	font-size 1.571rem
+	margin-bottom 15px
+
+
+.banner-small
+	width 100%
+	max-width 470px
+	border 1px solid #EEF1F2
+	background #fff
+	padding-top 30px
+	padding-bottom 10px
+	font-size 1.1428rem
+	text-align center
+	
+.banner-empty__text
+	display inline-block
+	margin-right 4px
+	margin-bottom 13px
+	&.banner-empty__text--orange
+		color orangeColor
+
+.banner-size
+	display block
+	letter-spacing 3px
+	color #BCC0C4
+	
+/*best sales section*/
+
+
+.best-sales__items
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+
+.best-sales__item
+	cursor pointer
+	background #fff
+	padding 25px 25px
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	align-items center
+	width 370px
+	margin-right 30px
+	&:nth-child(3n)
+		margin-right 0
+	&:hover
+		box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1)
+		.beast-sales__buy
+			display block
+		.best-sales__bottom
+			display none
+			
+.best-sales__img
+	position relative
+	text-align center
+	max-width 100%
+	margin-right 15px
+	&:after
+		content ''
+		position absolute
+		top 50%
+		transform translateY(-50%)
+		right -28px
+		display inline-block
+		height 60px
+		width 1px
+		background lightGrayColor
+
+.best-sales__title
+	display block
+	text-align center
+	margin-bottom 20px
+	font-family boldFont
+	font-size 1.143rem
+	
+.best-sales__bottom
+	display flex 
+	justify-content space-between
+
+.best-sales__price	
+	font-family boldFont
+	font-size 1.143rem
+	color  orangeColor
+.stars
+	svg
+		height 13px
+		fill #e9ecf3
+		cursor pointer
+		transition .3s ease all
+		&.active
+			fill orangeColor
+		&.liked
+			fill orangeColor
+
+.beast-sales__buy
+	display none
+	position relative
+	margin-left 30px
+	vertical-align middle
+	font-size 1.143rem
+	color orangeColor
+	&:before
+		content ''
+		position absolute
+		left -30px
+		top -4px
+		vertical-align middle
+		display inline-block
+		margin-right 5px
+		sprite($s-product-basket)
+
+/* subscribe section*/
+
+.subscribe__content
+	background #fff		
+	padding 35px 40px	
+	display flex
+	align-items center
+	flex-wrap wrap
+					
+.subscribe__title
+	margin-right 30px
+	text-transform uppercase
+	color orangeColor
+	font-family extraBoldFont
+	font-size 1.286rem
+
+.subscribe__descr
+	font-style italic
+	font-family semiboldFont
+
+.subscribe-form
+	margin-left auto
+
+.input-field__wrap
+	position relative
+	padding-left 35px
+	&:before
+		content '' 
+		sprite($s-header_mail)
+		display inline-block
+		margin-right 5px
+		top 2px
+		
+.input-field
+	border none
+	background none
+	font-style italic
+
+/*--footer---*/
+
+footer
+	background #fff
+	padding 80px 0
+	.container
+		display flex
+		flex-wrap wrap
+
+.footer-logo
+	margin-right 175px
+
+.footer-logo__img
+	display block
+	margin-bottom 25px
+	
+.footer-copyright
+	display block
+	font-weight bold
+	
+.footer-nav
+	margin-right 70px
+
+.footer-nav__list
+	li
+		margin-bottom 20px
+		list-style-type disc
+		&:hover
+			a 
+				color orangeColor
+	a 
+		font-weight bold
+
+.footer-payments
+	margin-left auto
+	span 
+		display block
+		font-weight bold
+		color orangeColor
+		font-size 1.143rem
+		margin-bottom 30px
+
+/* product-page */
+
+.product-view
+	background #fff
+	padding 80px 0 110px
+	.container
+		display flex
+		flex-wrap wrap 
+
+
+.product-gallery
+	width 100%
+	max-width 330px
+	margin 0 75px
+	
+	li 
+		width 330px!important
+
+.product-gallery 
+	.bx-wrapper 
+		.bx-viewport
+			margin-bottom 50px
+		
+	img
+		margin 0 auto
+
+.js-product-view__pager
+	text-align center
+	a 
+		position relative
+		display inline-block
+		width 95px
+		height 70px
+		vertical-align top
+		background mainBgColor
+		margin 0 7px
+		img 
+			position absolute
+			top 50%
+			left 50%
+			transform translate(-50%,-50%)
+		&.active
+			background orangeColor
+			opacity .9
+			img 
+				opacity .3
+	
+.product-info
+	width 100%
+	max-width 630px
+	
+.product-info__goods
+	display block
+	font-family boldFont
+	color lightBlueColor
+	font-size 1.285rem
+	margin-bottom 30px
+
+.product-info__descr
+	line-height 2.1428rem
+	font-size 1.142rem
+	margin-bottom 40px
+
+.product-settings
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	padding 35px 0
+	border-top 1px solid lightGrayColor
+	border-bottom 1px solid lightGrayColor
+	margin-bottom 40px
+
+.product__chose-size
+.product__choose-quantity
+	font-family boldFont
+	color lightBlueColor
+	font-size 1.285rem
+	>span
+		margin-right 20px
+		
+.chose-size__list
+	display inline-block
+	font-size 1rem
+	li 
+		display inline-block
+		cursor pointer
+		&.active
+			color orangeColor
+			font-size 1.285rem
+			&:before
+				color lightBlueColor
+	li+li
+		&:before
+			content '-'
+			display inline-block
+			margin-right 5px
+			
+.chose-quantity
+	display inline-block
+	
+.product__choose-quantity
+	position relative
+	&:before
+		content ''
+		display block
+		position absolute
+		width 1px
+		height 30px
+		left -80px
+		top -6px
+		background lightGrayColor
+
+.quantity-down
+.quantity-count
+	margin-right 8px
+
+.quantity-up
+.quantity-down
+	cursor pointer
+
+.quantity-count
+	color orangeColor
+
+.product-offer
+	display flex
+	justify-content space-between
+	align-items center
+	flex-wrap wrap
+
+.product-price__wrapper
+	font-family boldFont
+	font-size 1.428rem
+	
+.product-price
+	margin-left 8px
+	
+.product-actions
+	.product-item__buttons
+		display inline-block
+		margin-right 20px
+		padding-top 0
+		border-top none
+		width auto
+
+.product-actions
+	.g-btn
+		padding 0 30px
+		border-radius 25px
+		font-size 1.285rem
+
+	
+/* all products page*/
+
+.all-products
+	padding-top 120px
+	.container
+		display flex
+		justify-content space-between
+
+.all-products__filter
+	width 100%
+	max-width 270px
+
+.filter-item
+	background #fff
+	padding 40px
+
+.filter-title
+	display block
+	color orangeColor
+	font-family extraBoldFont
+	font-size 1.286rem
+	margin-bottom 40px
+
+.filter-line
+	margin-bottom 35px
+	&:last-child
+		margin-bottom 0
+	input[type="radio"]
+		display none
+		&:checked
+			&+label
+				color orangeColor
+		
+	label 
+		font-size 1.143rem
+		font-family boldFont
+		cursor pointer
+
+.all-products__show
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+	width 100%
+	max-width 870px
+	.product-item
+		margin-bottom 28px
+	
+	.product-item:nth-child(n+5)
+		display block
+	.product-item:nth-child(n+10)
+		display none
+
+.filter-item
+	margin-bottom 30px
+
+#slider_price
+	background lightGrayColor
+	border none
+	height 3px
+
+.ui-slider-horizontal .ui-slider-range
+	background lightBlueColor
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active
+	background lightBlueColor
+	height 13px
+	width 13px
+	border-radius 50%
+	outline none
+
+.filter-line--price
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+
+.filter__price-from
+.filter__price-to
+	display flex
+	justify-content space-between
+	align-items center
+	width 45%
+	input 
+		width 45px
+		background  mainBgColor
+		border none
+		text-align center
+		margin-left 5px
+		font-size 1.143rem
+		font-family boldFont
+
+.filter__price-to
+	justify-content flex-end
+
+.checkbox
+	position relative
+	padding-left 25px
+	input[type="checkbox"]
+		display none
+		&:checked
+			&+.custom-checkbox
+				border 4px solid orangeColor
+	
+.custom-checkbox
+	left 0px
+	top 4px
+	position absolute
+	display inline-block
+	width 13px
+	height 13px
+	background mainBgColor
+	
+
+
+
+
+
+
+
+
+
+
+
+
+// Общие стили
+@import '_common_styles.styl'
+
+// Стили шапки
+@import 'modules/_header.styl'
+
+// Стили меню
+@import 'modules/_menu.styl'
+
+// Стили главной страницы
+@import 'page/_index.styl'
+
+// Стили футера
+@import 'modules/_footer.styl'
+
+// Стили медиазапросов
+@import '_media.styl'
