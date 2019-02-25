@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('openSans/OpenSans-Regular.eot');
+    src: url('openSans/OpenSans-Regular.eot') format('embedded-opentype'),
+         url('openSans/OpenSans-Regular.woff') format('woff'),
+         url('openSans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('OpenSansBold/OpenSans-Bold.eot');
+    src: url('OpenSansBold/OpenSans-Bold.eot') format('embedded-opentype'),
+         url('OpenSansBold/OpenSans-Bold.woff') format('woff'),
+         url('OpenSansBold/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url('openSanSemiBold/OpenSans-SemiBold.eot');
+    src: url('openSanSemiBold/OpenSans-SemiBold.eot') format('embedded-opentype'),
+         url('openSanSemiBold/OpenSans-SemiBold.woff') format('woff'),
+         url('openSanSemiBold/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    src: url('OpenSanExtraBold/OpenSans-ExtraBold.eot');
+    src: url('OpenSanExtraBold/OpenSans-ExtraBold.eot') format('embedded-opentype'),
+         url('OpenSanExtraBold/OpenSans-ExtraBold.woff') format('woff'),
+         url('OpenSanExtraBold/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

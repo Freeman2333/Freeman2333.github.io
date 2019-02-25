@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <title>All products
+    </title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="header__top">
+          <div class="container">
+            <div class="header__contacts"><a class="header__mail" href="mailto:info@shopy.com">info@shopy.com</a><a class="header__phone" href="tel:55555555">5555-55-55</a></div>
+            <ul class="header__social">
+              <li> <a class="header-social__link header-social__link--fb" href="#"></a></li>
+              <li> <a class="header-social__link header-social__link--tw" href="#"></a></li>
+              <li> <a class="header-social__link header-social__link--google" href="#"></a></li>
+              <li> <a class="header-social__link header-social__link--instagram" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__logo"><img src="static/img/general/logo.png" alt="logo"></div>
+            <nav class="header-nav">
+              <ul class="header-nav__list">
+                <li class="active"> <a href="index.html">Home</a></li>
+                <li> <a href="product.html">Products</a></li>
+                <li> <a href="products-all.html">Hot Deals</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Contact</a></li>
+              </ul>
+            </nav>
+            <button class="hamburger hamburger--slider" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+            <div class="header-action">
+              <div class="header-search"><span class="header-search__icon"></span>
+                <form class="header-search__form">
+                  <input type="text">
+                </form>
+              </div>
+              <div class="header-user"><span class="header-user__icon"></span></div>
+              <div class="header-basket"><span class="header-basket__icon"></span><span class="header-basket__number">5</span></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="all-products">
+        <div class="container">
+          <aside class="all-products__filter">
+            <div class="filter-item"><span class="filter-title">Categories</span>
+              <div class="filter-line">
+                <input type="radio" id="filter-men" name="filter-cat">
+                <label for="filter-men">Men</label>
+              </div>
+              <div class="filter-line">
+                <input type="radio" id="filter-women" name="filter-cat">
+                <label for="filter-women">Women</label>
+              </div>
+              <div class="filter-line">
+                <input type="radio" id="filter-children" name="filter-cat">
+                <label for="filter-children">Children</label>
+              </div>
+              <div class="filter-line">
+                <input type="radio" id="filter-deals" name="filter-cat">
+                <label for="filter-deals">Hot Deals</label>
+              </div>
+            </div>
+            <div class="filter-item"><span class="filter-title">Price Filter</span>
+              <div class="filter-line">
+                <div id="slider_price"></div>
+              </div>
+              <div class="filter-line filter-line--price">
+                <div class="filter__price-from">
+                  <label for="price">From</label>
+                  <input type="text" name="price" id="price" maxlength="10">
+                </div>
+                <div class="filter__price-to">
+                  <label for="price2">To</label>
+                  <input type="text" name="price2" id="price2" maxlength="10">
+                </div>
+              </div>
+            </div>
+            <div class="filter-item"><span class="filter-title">Sizes</span>
+              <div class="filter-line">
+                <label class="checkbox" for="small">Small
+                  <input type="checkbox" id="small"><span class="custom-checkbox"></span>
+                </label>
+              </div>
+              <div class="filter-line">
+                <label class="checkbox" for="Medium">Medium
+                  <input type="checkbox" id="Medium"><span class="custom-checkbox"></span>
+                </label>
+              </div>
+              <div class="filter-line">
+                <label class="checkbox" for="Large">Large
+                  <input type="checkbox" id="Large"><span class="custom-checkbox"></span>
+                </label>
+              </div>
+              <div class="filter-line">
+                <label class="checkbox" for="X-Large">X-Large
+                  <input type="checkbox" id="X-Large"><span class="custom-checkbox"></span>
+                </label>
+              </div>
+            </div>
+            <div class="filter-item"><span class="filter-title">Brands</span>
+              <div class="filter-line">
+                <label class="checkbox" for="Reebok">Reebok
+                  <input type="checkbox" id="Reebok"><span class="custom-checkbox"></span>
+                </label>
+              </div>
+              <div class="filter-line">
+                <label class="checkbox" for="Adidas">Adidas
+                  <input type="checkbox" id="Adidas"><span class="custom-checkbox"></span>
+                </label>
+              </div>
+              <div class="filter-line">
+                <label class="checkbox" for="Nike">Nike
+                  <input type="checkbox" id="Nike"><span class="custom-checkbox"></span>
+                </label>
+                <div class="filter-line"></div>
+                <label class="checkbox" for="X-Active">X-Active
+                  <input type="checkbox" id="X-Active"><span class="custom-checkbox"></span>
+                </label>
+              </div>
+            </div>
+          </aside>
+          <main class="all-products__show">
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product1.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product2.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product1.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product4.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product1.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product2.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product1.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product4.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product1.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product2.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product2.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product1.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product1.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-item__first"><img class="product-item--pic" src="static/img/content/products/product4.png" alt="reebok"><span class="product-item__title">Reebok Track Jacket</span><span class="product-item__price">100$</span></div>
+              <div class="product-item__second">
+                <ul class="product-item__slider">
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                  <li> <img src="static/img/content/products/product4.png" alt="altern-product"></li>
+                </ul><span class="product-item__title">Reebok Track Jacket</span>
+                <div class="product-item__sizes"> <span>sizes : </span>
+                  <ul class="sizes-list">
+                    <li> <span>s </span></li>
+                    <li> <span class="active">m </span></li>
+                    <li> <span>l </span></li>
+                    <li> <span>xl</span></li>
+                  </ul>
+                </div>
+                <div class="product-item__colors"><a class="product-color__pink" href="#" data-slide-index="0"></a><a class="product-color__bluish" href="#" data-slide-index="1"></a><a class="product-color__blue" href="#" data-slide-index="2"></a><a class="product-color__green" href="#" data-slide-index="3"></a></div>
+                <ul class="product-item__buttons">
+                  <li><a class="product-item__web" href="#"></a></li>
+                  <li><a class="product-item__buy" href="#"></a></li>
+                  <li><a class="product-item__favourite" href="#"></a></li>
+                </ul>
+              </div>
+            </div><a class="product-item__more"></a>
+          </main>
+        </div>
+      </section>
+      <section class="subscribe">
+        <div class="container">
+          <div class="subscribe__content"><span class="subscribe__title">News Letter</span><span class="subscribe__descr">join us now to get all news and special offers</span>
+            <form class="subscribe-form">
+              <div class="input-field__wrap">
+                <input class="input-field" type="text" name="mail" placeholder="type your email here">
+                <input class="g-btn" type="submit" value="join us">
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer-logo"><img class="footer-logo__img" src="static/img/general/logo.png" alt="logo"><span class="footer-copyright">shopy c 2018 . your copy right here</span></div>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">suport</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li><a href="#">our feed</a></li>
+            <li><a href="#">terms and conditions</a></li>
+            <li><a href="#">our privacy</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-nav">
+          <ul class="footer-nav__list">
+            <li><a href="#">join us</a></li>
+            <li><a href="#">live support</a></li>
+          </ul>
+        </nav>
+        <div class="footer-payments"><span>Payment Methods</span><img src="static/img/content/payment.png" alt="payment"></div>
+      </div>
+    </footer>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
