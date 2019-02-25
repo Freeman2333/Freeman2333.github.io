@@ -11,10 +11,10 @@
 
 @font-face {
     font-family: 'OpenSansBold';
-    src: url('OpenSansBold/OpenSans-Bold.eot');
-    src: url('OpenSansBold/OpenSans-Bold.eot') format('embedded-opentype'),
-         url('OpenSansBold/OpenSans-Bold.woff') format('woff'),
-         url('OpenSansBold/OpenSans-Bold.ttf') format('truetype');
+    src: url('openSansBold/OpenSans-Bold.eot');
+    src: url('openSansBold/OpenSans-Bold.eot') format('embedded-opentype'),
+         url('openSansBold/OpenSans-Bold.woff') format('woff'),
+         url('openSansBold/OpenSans-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -33,10 +33,10 @@
 
 @font-face {
     font-family: 'OpenSansExtraBold';
-    src: url('OpenSanExtraBold/OpenSans-ExtraBold.eot');
-    src: url('OpenSanExtraBold/OpenSans-ExtraBold.eot') format('embedded-opentype'),
-         url('OpenSanExtraBold/OpenSans-ExtraBold.woff') format('woff'),
-         url('OpenSanExtraBold/OpenSans-ExtraBold.ttf') format('truetype');
+    src: url('openSanExtraBold/OpenSans-ExtraBold.eot');
+    src: url('openSanExtraBold/OpenSans-ExtraBold.eot') format('embedded-opentype'),
+         url('openSanExtraBold/OpenSans-ExtraBold.woff') format('woff'),
+         url('openSanExtraBold/OpenSans-ExtraBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
