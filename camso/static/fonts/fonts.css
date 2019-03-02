@@ -1,0 +1,30 @@
+
+@font-face {
+	font-family: 'Optima Cyr';
+	src: url('optima/Optima.eot');
+	src: local('Optima Cyr'), local('Optima'),
+		url('optima/Optima.eot?#iefix') format('embedded-opentype'),
+		url('optima/Optima.woff') format('woff'),
+		url('optima/Optima.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'war';
+	src: url('war/WarHeliosCondCBold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'iris';
+	src: url('iris/6603.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('neueCyr/HelveticaNeueCyr-Medium.eot');
+	src: local('HelveticaNeueCyr-Medium'),
+		url('neueCyr/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('neueCyr/HelveticaNeueCyr-Medium.woff') format('woff'),
+		url('neueCyr/HelveticaNeueCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
