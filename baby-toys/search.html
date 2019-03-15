@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Поиск | Страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="search-page">
+    <div class="preloader">
+      <div class="lds-default">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="wrappe">
+      <header> 
+        <div class="header">
+          <div class="header-top">
+            <div class="container">
+              <nav class="header-nav">
+                <ul class="header-nav_list">
+                  <li class="header-nav__item"><a class="header-nav__link" href="static-page.html">О компании</a></li>
+                  <li class="header-item__tablet-hide header-nav__item"><a class="header-nav__link" href="#">Доставка и оплата</a></li>
+                  <li class="header-item__tablet-hide header-nav__item"><a class="header-nav__link" href="static-page.html">Акции</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="static-page.html">Поставщикам</a></li>
+                  <li class="header-item__tablet-hide header-nav__item"><a class="header-nav__link" href="static-page.html">Новости</a></li>
+                  <li class="header-item__tablet-hide header-nav__item"><a class="header-nav__link" href="static-page.html">Гарантии</a></li>
+                  <li class="header-nav__item"><a class="header-nav__link" href="static-page.html">Контакты</a></li>
+                  <div class="header-nav__tablet-toggle">
+                    <svg class="icon icon-dots header-nav__tablet-icon">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#dots"></use>
+                    </svg>
+                    <div class="header-subnav">
+                      <div class="header-subnav__arrow"></div>
+                      <ul class="header-subnav__list">
+                        <li class="header-subnav__item"><a class="header-subnav__link" href="#">Доставка и оплата</a></li>
+                        <li class="header-subnav__item"><a class="header-subnav__link" href="#">Акции</a></li>
+                        <li class="header-subnav__item"><a class="header-subnav__link" href="#">Новости</a></li>
+                        <li class="header-subnav__item"><a class="header-subnav__link" href="#">Гарантии</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+              <nav class="header-nav header-nav__right">
+                <ul class="header-nav_list">
+                  <li class="header-nav__item"><a class="popup-with-form header-nav__link" href="#registration-form">Регистрация</a></li>
+                  <li class="header-nav__item"><a class="popup-with-form header-nav__link" href="#registration-form">Вход</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="header-main">
+            <div class="container">
+              <div class="logo header-logo"><a href="index.html"><img class="logo-img" src="static/img/general/header-logo.png" alt="baby-toys"></a></div>
+              <div class="header-phones">
+                <div class="header-item header-item__tablet-hide"><a class="header-phone header-phone-mobile" href="tel:380443456528">38 (063) 432-67-88</a><a class="header-link popup-with-form" href="#callback-form">Звонок бесплатный</a></div>
+                <div class="header-item"><a class="header-phone header-phone-city" href="tel:380443456528">38 (044) 432-67-88</a><a class="header-link popup-with-form" href="#callback-form">Звонок бесплатный</a></div>
+              </div>
+              <div class="header-address header-item__tablet-hide">
+                <svg class="icon icon-pin header-pin">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#pin"></use>
+                </svg><span class="header-address__text">г.Киев ул.Космонавтов 2/58,<br> офисс 95</span>
+              </div>
+              <div class="header-shop">
+                <div class="header-goods"><span class="header-goods__number">0 
+                    <svg class="icon icon-ukr header-goods__icon">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#ukr"></use>
+                    </svg></span><span class="header-goods__count">0 товаров</span></div>
+                <div class="header-basket">
+                  <svg class="icon icon-basket header-basket__img">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                  </svg><span class="header-basket__text">Корзина</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-menu">
+            <div class="container">
+              <nav class="header-main__nav main-nav">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item"><a class="main-nav__link" href="category.html">Самокаты</a>
+                    <div class="main-nav__dropdown-wrapper">
+                      <div class="main-dropdown">
+                        <ul class="main-dropdown__list">
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Детские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Взрослые и подростки</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Городские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Внедорожные</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трюковые</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="category.html">Беговелы</a>
+                    <div class="main-nav__dropdown-wrapper">
+                      <div class="main-dropdown">
+                        <ul class="main-dropdown__list">
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Детские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Взрослые и подростки</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Городские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Внедорожные</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трюковые</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="category.html">Велосипеды</a>
+                    <div class="main-nav__dropdown-wrapper">
+                      <div class="main-dropdown">
+                        <ul class="main-dropdown__list">
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Детские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Взрослые и подростки</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Городские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Внедорожные</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трюковые</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="category.html#">Скейтборды</a>
+                    <div class="main-nav__dropdown-wrapper">
+                      <div class="main-dropdown">
+                        <ul class="main-dropdown__list">
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Детские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Взрослые и подростки</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Городские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Внедорожные</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трюковые</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="category.html">Роликовые коньки</a>
+                    <div class="main-nav__dropdown-wrapper">
+                      <div class="main-dropdown">
+                        <ul class="main-dropdown__list">
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Детские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Взрослые и подростки</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Городские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Внедорожные</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трюковые</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные коньки</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="category.html">Каталки</a>
+                    <div class="main-nav__dropdown-wrapper">
+                      <div class="main-dropdown">
+                        <ul class="main-dropdown__list">
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Детские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Взрослые и подростки</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Городские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Внедорожные</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трюковые</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="category.html">Батуты</a>
+                    <div class="main-nav__dropdown-wrapper">
+                      <div class="main-dropdown">
+                        <ul class="main-dropdown__list">
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Детские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Взрослые и подростки</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Lorem Ipsum</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Городские</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Внедорожные</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трехколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С большими колесами</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">С надувными колесами</span></a></li>
+                            </ul>
+                          </li>
+                          <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"><span class="dropdown-text">Трюковые</span>
+                              <svg class="icon icon-right-chevron dropdow-icon">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                              </svg></a>
+                            <ul class="main-dropdown__list">
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                              <li class="main-dropdown__item"><a class="main-dropdown__link" href="#"> <span class="dropdown-text">Двухколесные</span></a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="category.html">Снегокаты</a></li>
+                </ul>
+              </nav>
+              <div class="header-search">
+                <svg class="icon icon-search header-search__icon">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                </svg>
+                <div class="search-body">
+                  <form class="search-form">
+                    <div class="search-input__wrapper">
+                      <input class="search-input" type="text" placeholder="Я хочу купить...">
+                      <div class="close-form__wrapper">
+                        <svg class="icon icon-close close-form__icon">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <input class="search-btn" type="submit" value="Найти">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-mobile">
+            <div class="container">
+              <div class="mobile-menu">
+                <div class="mobile-menu__toggle">
+                  <button class="hamburger hamburger--slider mobile-menu__hamburger" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><span class="mobile-menu__title">Каталог товаров</span>
+                </div>
+                <div class="mobile-menu__content">
+                  <div class="mobile-menu__header"><span class="mobile-menu__title">Меню</span>
+                    <div class="mobile-menu__close">
+                      <svg class="icon icon-close close-icon">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="mobile-menu__body">
+                    <nav class="catalog-nav">
+                      <ul class="catalog-nav__list">
+                        <li class="catalog-nav__item"><a class="catalog-nav__link" href="#"><span class="catalog-nav__name">Самокаты</span>
+                            <svg class="icon icon-right-chevron catalog-icon">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                            </svg></a>
+                          <ul class="catalog-nav__list catalog-nav__list--sub">
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem1</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem2</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem3</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem4</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem5</a></li>
+                          </ul>
+                        </li>
+                        <li class="catalog-nav__item"><a class="catalog-nav__link" href="#"><span class="catalog-nav__name">Беговелы</span>
+                            <svg class="icon icon-right-chevron catalog-icon">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                            </svg></a>
+                          <ul class="catalog-nav__list catalog-nav__list--sub">
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem1</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem2</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem3</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem4</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem5</a></li>
+                          </ul>
+                        </li>
+                        <li class="catalog-nav__item"><a class="catalog-nav__link" href="#"><span class="catalog-nav__name">Велосипеды</span>
+                            <svg class="icon icon-right-chevron catalog-icon">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                            </svg></a></li>
+                        <li class="catalog-nav__item"><a class="catalog-nav__link" href="#"><span class="catalog-nav__name">Скейтборды</span>
+                            <svg class="icon icon-right-chevron catalog-icon">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                            </svg></a>
+                          <ul class="catalog-nav__list catalog-nav__list--sub">
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem1</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem2</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem3</a></li>
+                          </ul>
+                        </li>
+                        <li class="catalog-nav__item"><a class="catalog-nav__link" href="#"><span class="catalog-nav__name">Роликовые коньки</span>
+                            <svg class="icon icon-right-chevron catalog-icon">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                            </svg></a>
+                          <ul class="catalog-nav__list catalog-nav__list--sub">
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem1</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem2</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem3</a></li>
+                          </ul>
+                        </li>
+                        <li class="catalog-nav__item"><a class="catalog-nav__link" href="#"><span class="catalog-nav__name">Каталки</span>
+                            <svg class="icon icon-right-chevron catalog-icon">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                            </svg></a>
+                          <ul class="catalog-nav__list catalog-nav__list--sub">
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem1</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem2</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem3</a></li>
+                          </ul>
+                        </li>
+                        <li class="catalog-nav__item"><a class="catalog-nav__link" href="#"><span class="catalog-nav__name">Батуты</span>
+                            <svg class="icon icon-right-chevron catalog-icon">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                            </svg></a>
+                          <ul class="catalog-nav__list catalog-nav__list--sub">
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem1</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem2</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem3</a></li>
+                          </ul>
+                        </li>
+                        <li class="catalog-nav__item"><a class="catalog-nav__link" href="#"><span class="catalog-nav__name">Снегокаты</span>
+                            <svg class="icon icon-right-chevron catalog-icon">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#right-chevron"></use>
+                            </svg></a>
+                          <ul class="catalog-nav__list catalog-nav__list--sub">
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem1</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem2</a></li>
+                            <li class="catalog-nav__item"><a class="catalog-nav__link" href="#">Lorem3</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav class="inform-nav">
+                      <ul class="inform-nav__list">
+                        <li class="inform-nav__item"><a class="inform-nav__link" href="#">О компании</a></li>
+                        <li class="inform-nav__item"><a class="inform-nav__link" href="#">Доставка и оплата</a></li>
+                        <li class="inform-nav__item"><a class="inform-nav__link" href="#">Акции</a></li>
+                        <li class="inform-nav__item"><a class="inform-nav__link" href="#">Поставщикам</a></li>
+                        <li class="inform-nav__item"><a class="inform-nav__link" href="#">Новости</a></li>
+                        <li class="inform-nav__item"><a class="inform-nav__link" href="#">Контакты</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="mobile-menu__footer">
+                    <div class="mobile-menu__phone"><a class="mobile-menu__phone-number" href="tel:38 (063) 432-67-88">38 (063) 432-67-88</a><a class="mobile-menu__phone-link" href="#">Звонок бесплатный</a></div>
+                    <div class="mobile-menu__phone"><a class="mobile-menu__phone-number" href="tel:38 (044) 432-67-88">38 (044) 432-67-88</a><a class="mobile-menu__phone-link" href="#">Звонок бесплатный</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile__logo logo"><a class="mobile__logo-link" href="index.html"><img class="logo-img" src="static/img/general/header-logo.png" alt="baby-toys"></a></div>
+              <div class="mobile-header__search">
+                <form class="search-form">
+                  <div class="search-input__wrapper">
+                    <input class="search-input" type="text" placeholder="Я хочу купить...">
+                  </div>
+                  <input class="search-btn" type="submit" value="Найти">
+                </form>
+              </div>
+              <div class="mobile-user-nav">
+                <ul class="mobile-user-nav__list">
+                  <li class="mobile-user-nav__item mobile-user-nav__item--search"><span class="mobile-user-nav__link">
+                      <svg class="icon icon-search mobile-user__icon">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#search"></use>
+                      </svg></span></li>
+                  <li class="mobile-user-nav__item"><span class="mobile-user-nav__link">
+                      <svg class="icon icon-user mobile-user__icon">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#user"></use>
+                      </svg></span></li>
+                  <li class="mobile-user-nav__item"><span class="mobile-user-nav__link">
+                      <svg class="icon icon-basket mobile-user__icon">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#basket"></use>
+                      </svg></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="popup mfp-hide" id="callback-form">
+        <form class="popup-form" id="form-callback">
+          <div class="form__header popup-form__header"><span class="popup__title">Заказать звонок</span></div>
+          <div class="form__body popup-form__body">
+            <div class="form-row">
+              <input class="form__input--center form__input" type="text" placeholder="Ваше имя*" name="name">
+            </div>
+            <div class="form-row">
+              <input class="form__input--center form__input" type="text" placeholder="Телефон*" name="phone">
+            </div>
+            <div class="form-row">
+              <input class="btn btn--big btn--bg-orange" type="submit" value="Заказать звонок">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="popup mfp-hide" id="registration-form">
+        <form class="popup-form" id="form-registration">
+          <div class="form__header popup-form__header"><span class="popup__title">Регистрация</span></div>
+          <div class="form__body popup-form__body">
+            <div class="form-row">
+              <input class="form__input--center form__input" type="text" placeholder="Логин*" name="login">
+            </div>
+            <div class="form-row">
+              <input class="form__input--center form__input" type="text" placeholder="Пароль*" name="password">
+            </div>
+            <div class="form-row">
+              <input class="form__input--center form__input" type="text" placeholder="Электронная почта*" name="email">
+            </div>
+            <div class="form-row">
+              <input class="btn btn--big btn--bg-orange" type="submit" value="Зарегистрироваться">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="popup mfp-hide" id="popup-add2cart">
+        <div class="form__header popup-form__header"><span class="popup__title">Товар добавлен в корзину</span></div>
+        <div class="pop_img"><img src="static/img/content/products/product1.jpg" alt="bike"></div>
+        <div class="pop_btn_wrap"><a class="btn" href="#">Продолжить покупки</a><a class="btn" href="#">В корзину</a></div>
+      </div>
+      <div class="conten">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="bredcrumbs-list">
+              <li class="bredcrumbs-item"><a class="bredcrumbs-link" href="#">Главная</a></li>
+              <li class="bredcrumbs-item"><a class="bredcrumbs-link" href="#">Поиск</a></li>
+            </ul>
+          </div>
+        </div>
+        <section class="search-results">
+          <div class="container">
+            <h1 class="page-title">Поиск</h1>
+            <div class="content-block">
+              <div class="search-result__header">
+                <div class="search-result__request"><span class="search-result__label">По запросу:</span>
+                  <form class="search-form">
+                    <div class="search-input__wrapper">
+                      <input class="search-input" type="text" placeholder="Я хочу купить...">
+                    </div>
+                    <input class="search-btn" type="submit" value="Найти">
+                  </form>
+                </div>
+              </div>
+              <div class="search-result__body"><span class="search-result__label">Найдено товаров:</span><a class="search-result__link" href="#"><b>Тюбинг </b> Митек 110 см Божья коровка</a>
+                <p class="search-result__descr"><b>ТЮБИНГ </b> для катания по снежным склонам, для веселого отдыха с друзьями и детьми. Материал верха и сиденья - прочная синтетическая ткань Оксфорд ... </p><a class="search-result__link" href="#"><b>Тюбинг </b> Митек 110 см Божья коровка</a>
+                <p class="search-result__descr"><b>ТЮБИНГ </b> для катания по снежным склонам, для веселого отдыха с друзьями и детьми. Материал верха и сиденья - прочная синтетическая ткань Оксфорд ... </p><a class="search-result__link" href="#"><b>Тюбинг </b> Митек 110 см Божья коровка</a>
+                <p class="search-result__descr"><b>ТЮБИНГ </b> для катания по снежным склонам, для веселого отдыха с друзьями и детьми. Материал верха и сиденья - прочная синтетическая ткань Оксфорд ... </p><a class="search-result__link" href="#"><b>Тюбинг </b> Митек 110 см Божья коровка</a>
+                <p class="search-result__descr"><b>ТЮБИНГ </b> для катания по снежным склонам, для веселого отдыха с друзьями и детьми. Материал верха и сиденья - прочная синтетическая ткань Оксфорд ... </p><a class="search-result__link" href="#"><b>Тюбинг </b> Митек 110 см Божья коровка</a>
+                <p class="search-result__descr"><b>ТЮБИНГ </b> для катания по снежным склонам, для веселого отдыха с друзьями и детьми. Материал верха и сиденья - прочная синтетическая ткань Оксфорд ... </p>
+              </div>
+              <div class="pagination"><a class="pagination__btn" href="#">
+                  <svg class="icon icon-arrow-left pagination-icon">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-left"></use>
+                  </svg></a>
+                <ul class="pagination__list">
+                  <li class="pagination__item"><a class="pagination__link" href="#">1</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                  <li class="pagination__item pagination__item--active"><a class="pagination__link" href="#">3</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">11</a></li>
+                </ul><a class="pagination__btn pagination__btn--next" href="#">
+                  <svg class="icon icon-arrow-left pagination-icon">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-left"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-item">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Самокаты</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Беговелы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Велосипеды</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Роликовые коньки</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Каталки</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Батуты</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">О компании</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Доставка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Оплата</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Поставщикам</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Новости</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Отзывы</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Вопрос-ответ</a></li>
+              </ul>
+            </div>
+            <div class="footer-contacts">
+              <div class="footer-phones"><span class="footer-phone">8 (800) 734-55-52</span><span class="footer-phone__text">Звонок бесплатный</span><span class="footer-phone__text">+38 (044) 432-30-34</span></div><span class="footer-email">sale@baby-toys.ua</span>
+            </div>
+          </div>
+          <div class="footer-mobile__contacts">
+            <div class="footer-item"><span class="footer-phone">8 (800) 734-55-52</span><span class="footer-phone__text">Звонок бесплатный</span></div>
+            <div class="footer-item"><span class="footer-phone__text">+38 (044) 432-30-34</span><span class="footer-email">sale@baby-toys.ua</span></div>
+            <div class="yandex-market yandex-market__mobile footer-item"><svg width="98" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M.002.101h6.432v14.702H.002z"/></defs><g fill="none" fill-rule="evenodd"><path d="M59.576 1.205h-1.213l-2.415 9.356a17.145 17.145 0 0 0-.408 2.157c-.03-.314-.072-.64-.125-.974-.058-.362-.147-.76-.264-1.183L52.808 1.23l-.005-.024h-1.19l-.681 15.219-.001.03h.913l.461-10.387c.03-.594.048-1.188.055-1.76.007-.59.01-1.063.01-1.447h.01c.058.526.13 1.014.217 1.452.088.444.19.904.307 1.367l2.168 8.35.006.021h.856l2.196-8.37a20.3 20.3 0 0 0 .318-1.434c.08-.438.155-.91.227-1.407h.01v1.413c0 .481.015 1.062.044 1.727l.46 10.447.001.029h1.067l-.68-15.22-.001-.03zm7.234 9.392v3.104a4.689 4.689 0 0 1-.836 1.522c-.35.416-.781.626-1.28.626-.529 0-.955-.217-1.268-.647-.317-.43-.477-1.045-.477-1.825 0-.968.226-1.68.67-2.118.446-.44 1.13-.662 2.038-.662h1.153zm1.09 4.94a10.052 10.052 0 0 1-.066-1.144v-6.01c0-1.096-.246-1.916-.731-2.436-.486-.522-1.193-.785-2.103-.785-.629 0-1.175.115-1.623.342-.448.227-.786.49-1.007.785l-.009.012.307 1.012.035-.05a2.7 2.7 0 0 1 .997-.875c.403-.21.84-.314 1.3-.314.6 0 1.058.19 1.357.567.3.379.453 1.002.453 1.851v1.347h-1.175c-1.2 0-2.127.308-2.758.915-.63.608-.95 1.515-.95 2.7 0 1.007.237 1.805.707 2.368.471.566 1.09.852 1.841.852.559 0 1.044-.157 1.442-.465.372-.29.69-.68.946-1.163a6.11 6.11 0 0 0 .255 1.388l.006.02h.963l-.015-.04c-.07-.198-.13-.494-.173-.877z" fill="#000"/><g transform="translate(70.225 5.061)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M3.054 10.766c-.488 0-.895-.11-1.21-.322-.314-.215-.583-.548-.797-.989V3.217a6.11 6.11 0 0 1 .412-.831c.158-.266.338-.505.532-.705a2.64 2.64 0 0 1 .628-.488c.22-.12.456-.18.697-.18.642 0 1.153.405 1.518 1.206.369.808.556 1.952.556 3.397 0 1.75-.217 3.062-.643 3.9-.424.83-.993 1.25-1.693 1.25m2.61-9.152C5.415 1.138 5.103.763 4.736.5A2.084 2.084 0 0 0 3.491.101c-.618 0-1.14.212-1.554.63-.381.389-.697.83-.94 1.315L.915.348.914.318H.002v14.485h1.045v-4.117c.2.25.461.46.778.628.345.183.73.276 1.141.276 1.043 0 1.891-.508 2.522-1.51.629-1 .946-2.53.946-4.552 0-.798-.066-1.54-.197-2.201-.13-.663-.323-1.239-.572-1.713" fill="#000" mask="url(#b)"/></g><path fill="#000" d="M84.298 5.427l.033-.047h-1.037l-3.656 5.117V5.38h-1.044v11.075h1.044v-5.637l3.778 5.624.01.013h1.166l-3.918-5.93zm3.786.559c.27 0 .53.084.772.248.243.167.453.43.625.784.174.356.297.813.37 1.36.071.541.087 1.187.045 1.92h-3.993c.046-1.402.28-2.483.696-3.213.416-.729.916-1.1 1.485-1.1zm2.79 5.109c.087-.972.08-1.838-.022-2.575-.103-.735-.28-1.36-.529-1.856-.25-.498-.57-.877-.952-1.126a2.314 2.314 0 0 0-1.287-.376c-.47 0-.907.13-1.297.387-.389.256-.73.638-1.017 1.137-.285.495-.51 1.104-.671 1.81-.16.706-.242 1.52-.242 2.422 0 1.818.278 3.246.825 4.243.55 1.003 1.425 1.513 2.6 1.513.424 0 .807-.064 1.138-.188a3.04 3.04 0 0 0 .806-.43 2.87 2.87 0 0 0 .642-.618l.01-.013-.357-.878-.03.049a2.126 2.126 0 0 1-.542.583c-.186.156-.42.295-.693.41a2.45 2.45 0 0 1-.952.173c-.802 0-1.405-.4-1.791-1.185-.388-.789-.601-1.95-.632-3.455h4.99l.003-.027zm.882-5.715v.824h2.584v10.25h1.045V6.205h2.563V5.38zM22.75 15.063h-3.062c.286-.47.521-1.026.707-1.666.185-.642.335-1.321.45-2.04.114-.72.192-1.454.235-2.202.043-.747.064-1.456.064-2.126v-.213h1.606v8.247zm1.692-9.614h-4.796v.94c0 .67-.011 1.374-.033 2.115a21.81 21.81 0 0 1-.182 2.243 18.5 18.5 0 0 1-.438 2.244 9.398 9.398 0 0 1-.803 2.072h-.664v3.546h1.52v-2.322h4.9v2.322h1.352v-3.546h-.856V5.449zm6.551 4.486h-2.826c.028-.484.078-.933.15-1.346a4.88 4.88 0 0 1 .3-1.078c.128-.307.285-.546.47-.716a.914.914 0 0 1 .643-.257c.342 0 .62.232.835.695.214.462.35 1.115.407 1.955 0 .099.003.192.01.278.007.085.01.163.01.234v.235zm-1.2-4.764c-.599 0-1.113.174-1.541.524-.428.348-.781.811-1.06 1.387a7.704 7.704 0 0 0-.62 1.988 13.058 13.058 0 0 0-.204 2.34c0 1.68.335 2.984 1.007 3.909.67.926 1.563 1.39 2.676 1.39a4.48 4.48 0 0 0 1.466-.225c.436-.15.832-.325 1.189-.524l-.193-1.218a6.41 6.41 0 0 1-.824.268c-.35.092-.69.139-1.017.139-.871 0-1.51-.33-1.917-.993-.406-.662-.61-1.585-.61-2.767h4.604v-.946c0-1.737-.272-3.049-.814-3.939-.543-.89-1.256-1.333-2.141-1.333zm16.426 9.839a3.57 3.57 0 0 1-.964.139c-.828 0-1.442-.37-1.842-1.112-.4-.74-.599-1.76-.599-3.055 0-.555.043-1.1.129-1.634a7.202 7.202 0 0 1 .364-1.42c.157-.414.356-.748.6-1.006.241-.256.513-.384.813-.384.257 0 .51.079.76.236.25.156.474.349.674.576l.878-1.474a3.921 3.921 0 0 0-1.017-.513 3.971 3.971 0 0 0-1.274-.192c-.528 0-1.02.15-1.477.448-.457.3-.85.72-1.178 1.261-.328.542-.589 1.197-.781 1.966-.193.768-.29 1.624-.29 2.564 0 1.71.34 3.019 1.018 3.93.677.913 1.566 1.368 2.665 1.368a3.94 3.94 0 0 0 1.38-.225 6.305 6.305 0 0 0 1.104-.523l-.171-1.218c-.2.086-.464.175-.792.268"/><path d="M6.486 8.974h-.9a2.93 2.93 0 0 1-1.07-.201 2.473 2.473 0 0 1-.921-.649 3.319 3.319 0 0 1-.653-1.137c-.164-.46-.246-1.022-.246-1.688 0-.68.075-1.265.225-1.754.15-.487.349-.887.599-1.2.25-.31.535-.537.856-.679a2.44 2.44 0 0 1 .996-.213h1.114v7.52zM3.69.342a4.07 4.07 0 0 0-1.445 1.016c-.414.448-.742 1-.985 1.655-.242.655-.364 1.41-.364 2.264 0 1.111.218 2.07.653 2.874.436.805 1.16 1.45 2.174 1.935L0 16.287h1.948l3.424-5.925h1.114v5.925h1.69V0h-2.74a4.52 4.52 0 0 0-1.745.342z" fill="red"/><path fill="#000" d="M14.662 9.786h-2.436V5.449h-1.714v10.838h1.714V11.24h2.436v5.048h1.69V5.45h-1.69zM40.224 5.45h-1.82l-2.333 4.785-.193.214v-5h-1.713v11.003h1.713V10.79l.193.235 2.633 5.427h1.906l-3.083-6.047z"/></g></svg><a class="btn btn--inline btn--transparent-gray btn--small" href="#">Оставить отзыв</a></div>
+          </div>
+          <div class="footer-socials">
+            <ul class="footer-social__list">
+              <li class="footer-social__item"><a class="footer-social__link" href="#"><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><defs><radialGradient cx="33.403%" cy="100%" fx="33.403%" fy="100%" r="103.891%" gradientTransform="rotate(-74.269 .356 .983) scale(1 .96679)" id="a"><stop stop-color="#FED87B" offset="0%"/><stop stop-color="#F9742C" offset="26.079%"/><stop stop-color="#CD286C" offset="50.321%"/><stop stop-color="#B12FA0" offset="73.519%"/><stop stop-color="#4C64D4" offset="100%"/></radialGradient></defs><g fill="none" fill-rule="evenodd"><rect fill="url(#a)" width="30" height="30" rx="4"/><path d="M19.126 5.625H10.77a5.152 5.152 0 0 0-5.146 5.146v8.355a5.152 5.152 0 0 0 5.146 5.146h8.355a5.152 5.152 0 0 0 5.146-5.146V10.77a5.152 5.152 0 0 0-5.146-5.146zm3.491 13.5a3.495 3.495 0 0 1-3.491 3.492H10.77a3.495 3.495 0 0 1-3.492-3.491V10.77a3.495 3.495 0 0 1 3.492-3.492h8.355a3.495 3.495 0 0 1 3.491 3.492v8.355z" fill="#FFF" fill-rule="nonzero"/><path d="M14.948 10.144a4.81 4.81 0 0 0-4.804 4.804 4.81 4.81 0 0 0 4.804 4.805 4.81 4.81 0 0 0 4.805-4.805 4.81 4.81 0 0 0-4.805-4.804zm0 7.954a3.154 3.154 0 0 1-3.15-3.15 3.154 3.154 0 0 1 3.15-3.15 3.154 3.154 0 0 1 3.15 3.15 3.154 3.154 0 0 1-3.15 3.15zm5.007-9.358a1.218 1.218 0 0 0-1.214 1.214 1.22 1.22 0 0 0 1.214 1.213c.32 0 .632-.13.858-.355a1.218 1.218 0 0 0 0-1.716 1.218 1.218 0 0 0-.858-.355z" fill="#FFF" fill-rule="nonzero"/></g></svg><span class="footer-social__name">Instagram</span></a></li>
+              <li class="footer-social__item"><a class="footer-social__link" href="#"><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#3B5998" width="30" height="30" rx="4"/><path d="M17.887 14.986h-2.051V22.5h-3.108v-7.514H11.25v-2.641h1.478v-1.71c0-1.221.58-3.135 3.135-3.135l2.302.01v2.563h-1.67c-.274 0-.66.137-.66.72v1.554h2.323l-.271 2.639z" fill="#FFF" fill-rule="nonzero"/></g></svg><span class="footer-social__name">Facebook</span></a></li>
+              <li class="footer-social__item"><a class="footer-social__link" href="#"><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#E4762F" width="30" height="30" rx="4"/><path d="M16.802 18.545a8.346 8.346 0 0 0 2.588-1.072 1.306 1.306 0 0 0-1.39-2.21 5.66 5.66 0 0 1-6 0 1.303 1.303 0 0 0-1.799.41c-.384.61-.2 1.416.408 1.8.797.5 1.671.862 2.588 1.072l-2.492 2.49a1.305 1.305 0 1 0 1.848 1.846l2.446-2.447 2.45 2.448c.508.51 1.333.51 1.842.001l.002-.001c.51-.508.511-1.334.003-1.842l-.003-.004-2.49-2.491M15 14.91a4.46 4.46 0 0 0 4.456-4.454A4.46 4.46 0 0 0 15 6a4.46 4.46 0 0 0-4.456 4.456A4.46 4.46 0 0 0 15 14.91m0-6.3c1.017 0 1.845.829 1.845 1.846A1.847 1.847 0 0 1 15 12.3a1.847 1.847 0 0 1-1.845-1.844c0-1.017.828-1.845 1.845-1.845" fill="#FFF"/></g></svg><span class="footer-social__name">Одноклассники</span></a></li>
+              <li class="footer-social__item"><a class="footer-social__link" href="#"><svg width="30" height="30" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#4C75A2" width="30" height="30" rx="4"/><path d="M20.19 14.903s2.25-3.174 2.473-4.218c.075-.372-.089-.581-.476-.581h-1.953c-.447 0-.61.194-.745.477 0 0-1.055 2.249-2.34 3.666-.412.459-.622.597-.85.597-.183 0-.268-.153-.268-.567v-3.622c0-.507-.06-.655-.477-.655h-3.13c-.238 0-.387.139-.387.327 0 .478.73.586.73 1.878v2.669c0 .536-.03.744-.283.744-.67 0-2.265-2.31-3.16-4.933-.179-.537-.372-.685-.88-.685h-1.95c-.283 0-.493.193-.493.477 0 .52.612 2.936 3.01 6.17C10.62 18.823 12.738 20 14.646 20c1.162 0 1.446-.193 1.446-.685v-1.67c0-.417.163-.596.402-.596.269 0 .742.087 1.848 1.178C19.653 19.48 19.743 20 20.458 20h2.19c.225 0 .433-.103.433-.476 0-.492-.64-1.371-1.625-2.415-.402-.536-1.058-1.118-1.266-1.387-.3-.312-.209-.49 0-.819" fill="#FFF"/></g></svg><span class="footer-social__name">Вконтакте</span></a></li>
+            </ul>
+            <div class="yandex-market"><svg width="98" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M.002.101h6.432v14.702H.002z"/></defs><g fill="none" fill-rule="evenodd"><path d="M59.576 1.205h-1.213l-2.415 9.356a17.145 17.145 0 0 0-.408 2.157c-.03-.314-.072-.64-.125-.974-.058-.362-.147-.76-.264-1.183L52.808 1.23l-.005-.024h-1.19l-.681 15.219-.001.03h.913l.461-10.387c.03-.594.048-1.188.055-1.76.007-.59.01-1.063.01-1.447h.01c.058.526.13 1.014.217 1.452.088.444.19.904.307 1.367l2.168 8.35.006.021h.856l2.196-8.37a20.3 20.3 0 0 0 .318-1.434c.08-.438.155-.91.227-1.407h.01v1.413c0 .481.015 1.062.044 1.727l.46 10.447.001.029h1.067l-.68-15.22-.001-.03zm7.234 9.392v3.104a4.689 4.689 0 0 1-.836 1.522c-.35.416-.781.626-1.28.626-.529 0-.955-.217-1.268-.647-.317-.43-.477-1.045-.477-1.825 0-.968.226-1.68.67-2.118.446-.44 1.13-.662 2.038-.662h1.153zm1.09 4.94a10.052 10.052 0 0 1-.066-1.144v-6.01c0-1.096-.246-1.916-.731-2.436-.486-.522-1.193-.785-2.103-.785-.629 0-1.175.115-1.623.342-.448.227-.786.49-1.007.785l-.009.012.307 1.012.035-.05a2.7 2.7 0 0 1 .997-.875c.403-.21.84-.314 1.3-.314.6 0 1.058.19 1.357.567.3.379.453 1.002.453 1.851v1.347h-1.175c-1.2 0-2.127.308-2.758.915-.63.608-.95 1.515-.95 2.7 0 1.007.237 1.805.707 2.368.471.566 1.09.852 1.841.852.559 0 1.044-.157 1.442-.465.372-.29.69-.68.946-1.163a6.11 6.11 0 0 0 .255 1.388l.006.02h.963l-.015-.04c-.07-.198-.13-.494-.173-.877z" fill="#000"/><g transform="translate(70.225 5.061)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M3.054 10.766c-.488 0-.895-.11-1.21-.322-.314-.215-.583-.548-.797-.989V3.217a6.11 6.11 0 0 1 .412-.831c.158-.266.338-.505.532-.705a2.64 2.64 0 0 1 .628-.488c.22-.12.456-.18.697-.18.642 0 1.153.405 1.518 1.206.369.808.556 1.952.556 3.397 0 1.75-.217 3.062-.643 3.9-.424.83-.993 1.25-1.693 1.25m2.61-9.152C5.415 1.138 5.103.763 4.736.5A2.084 2.084 0 0 0 3.491.101c-.618 0-1.14.212-1.554.63-.381.389-.697.83-.94 1.315L.915.348.914.318H.002v14.485h1.045v-4.117c.2.25.461.46.778.628.345.183.73.276 1.141.276 1.043 0 1.891-.508 2.522-1.51.629-1 .946-2.53.946-4.552 0-.798-.066-1.54-.197-2.201-.13-.663-.323-1.239-.572-1.713" fill="#000" mask="url(#b)"/></g><path fill="#000" d="M84.298 5.427l.033-.047h-1.037l-3.656 5.117V5.38h-1.044v11.075h1.044v-5.637l3.778 5.624.01.013h1.166l-3.918-5.93zm3.786.559c.27 0 .53.084.772.248.243.167.453.43.625.784.174.356.297.813.37 1.36.071.541.087 1.187.045 1.92h-3.993c.046-1.402.28-2.483.696-3.213.416-.729.916-1.1 1.485-1.1zm2.79 5.109c.087-.972.08-1.838-.022-2.575-.103-.735-.28-1.36-.529-1.856-.25-.498-.57-.877-.952-1.126a2.314 2.314 0 0 0-1.287-.376c-.47 0-.907.13-1.297.387-.389.256-.73.638-1.017 1.137-.285.495-.51 1.104-.671 1.81-.16.706-.242 1.52-.242 2.422 0 1.818.278 3.246.825 4.243.55 1.003 1.425 1.513 2.6 1.513.424 0 .807-.064 1.138-.188a3.04 3.04 0 0 0 .806-.43 2.87 2.87 0 0 0 .642-.618l.01-.013-.357-.878-.03.049a2.126 2.126 0 0 1-.542.583c-.186.156-.42.295-.693.41a2.45 2.45 0 0 1-.952.173c-.802 0-1.405-.4-1.791-1.185-.388-.789-.601-1.95-.632-3.455h4.99l.003-.027zm.882-5.715v.824h2.584v10.25h1.045V6.205h2.563V5.38zM22.75 15.063h-3.062c.286-.47.521-1.026.707-1.666.185-.642.335-1.321.45-2.04.114-.72.192-1.454.235-2.202.043-.747.064-1.456.064-2.126v-.213h1.606v8.247zm1.692-9.614h-4.796v.94c0 .67-.011 1.374-.033 2.115a21.81 21.81 0 0 1-.182 2.243 18.5 18.5 0 0 1-.438 2.244 9.398 9.398 0 0 1-.803 2.072h-.664v3.546h1.52v-2.322h4.9v2.322h1.352v-3.546h-.856V5.449zm6.551 4.486h-2.826c.028-.484.078-.933.15-1.346a4.88 4.88 0 0 1 .3-1.078c.128-.307.285-.546.47-.716a.914.914 0 0 1 .643-.257c.342 0 .62.232.835.695.214.462.35 1.115.407 1.955 0 .099.003.192.01.278.007.085.01.163.01.234v.235zm-1.2-4.764c-.599 0-1.113.174-1.541.524-.428.348-.781.811-1.06 1.387a7.704 7.704 0 0 0-.62 1.988 13.058 13.058 0 0 0-.204 2.34c0 1.68.335 2.984 1.007 3.909.67.926 1.563 1.39 2.676 1.39a4.48 4.48 0 0 0 1.466-.225c.436-.15.832-.325 1.189-.524l-.193-1.218a6.41 6.41 0 0 1-.824.268c-.35.092-.69.139-1.017.139-.871 0-1.51-.33-1.917-.993-.406-.662-.61-1.585-.61-2.767h4.604v-.946c0-1.737-.272-3.049-.814-3.939-.543-.89-1.256-1.333-2.141-1.333zm16.426 9.839a3.57 3.57 0 0 1-.964.139c-.828 0-1.442-.37-1.842-1.112-.4-.74-.599-1.76-.599-3.055 0-.555.043-1.1.129-1.634a7.202 7.202 0 0 1 .364-1.42c.157-.414.356-.748.6-1.006.241-.256.513-.384.813-.384.257 0 .51.079.76.236.25.156.474.349.674.576l.878-1.474a3.921 3.921 0 0 0-1.017-.513 3.971 3.971 0 0 0-1.274-.192c-.528 0-1.02.15-1.477.448-.457.3-.85.72-1.178 1.261-.328.542-.589 1.197-.781 1.966-.193.768-.29 1.624-.29 2.564 0 1.71.34 3.019 1.018 3.93.677.913 1.566 1.368 2.665 1.368a3.94 3.94 0 0 0 1.38-.225 6.305 6.305 0 0 0 1.104-.523l-.171-1.218c-.2.086-.464.175-.792.268"/><path d="M6.486 8.974h-.9a2.93 2.93 0 0 1-1.07-.201 2.473 2.473 0 0 1-.921-.649 3.319 3.319 0 0 1-.653-1.137c-.164-.46-.246-1.022-.246-1.688 0-.68.075-1.265.225-1.754.15-.487.349-.887.599-1.2.25-.31.535-.537.856-.679a2.44 2.44 0 0 1 .996-.213h1.114v7.52zM3.69.342a4.07 4.07 0 0 0-1.445 1.016c-.414.448-.742 1-.985 1.655-.242.655-.364 1.41-.364 2.264 0 1.111.218 2.07.653 2.874.436.805 1.16 1.45 2.174 1.935L0 16.287h1.948l3.424-5.925h1.114v5.925h1.69V0h-2.74a4.52 4.52 0 0 0-1.745.342z" fill="red"/><path fill="#000" d="M14.662 9.786h-2.436V5.449h-1.714v10.838h1.714V11.24h2.436v5.048h1.69V5.45h-1.69zM40.224 5.45h-1.82l-2.333 4.785-.193.214v-5h-1.713v11.003h1.713V10.79l.193.235 2.633 5.427h1.906l-3.083-6.047z"/></g></svg><a class="btn btn--inline btn--transparent-gray btn--small" href="#">Оставить отзыв</a></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container"><span class="footer-copyright">© 2010-2019 «Baby-Toys». Все права защищены. Информация сайта защищена законом об авторских правах.</span><a class="personal-data__policy" href="#">Политика обработки персональных данных</a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
