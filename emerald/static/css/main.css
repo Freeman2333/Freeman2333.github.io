@@ -1329,14 +1329,12 @@ header .container {
       justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
   height: 70px;
   padding: 15px 10px;
 }
 .header-logo {
-  position: relative;
-  top: 35px;
+/*   position: relative;
+  top: 35px; */
   z-index: 1;
 }
 .sandwich {
